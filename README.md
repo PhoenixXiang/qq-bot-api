@@ -1,12 +1,12 @@
 # Golang bindings for the CoolQ HTTP API
 
-[![GoDoc](https://godoc.org/github.com/catsworld/qq-bot-api?status.svg)](https://godoc.org/github.com/catsworld/qq-bot-api)
-[![Build Status](https://travis-ci.org/catsworld/qq-bot-api.svg?branch=master)](https://travis-ci.org/catsworld/qq-bot-api)
+[![GoDoc](https://godoc.org/github.com/PhoenixXiang/qq-bot-api?status.svg)](https://godoc.org/github.com/PhoenixXiang/qq-bot-api)
+[![Build Status](https://travis-ci.org/PhoenixXiang/qq-bot-api.svg?branch=master)](https://travis-ci.org/PhoenixXiang/qq-bot-api)
 
 If you're familiar with [go-telegram-bot-api](https://github.com/go-telegram-bot-api/telegram-bot-api),
 you should quickly get familiar with this. -- Method names and architectures are just like the Telegram Bot API.
 
-Head through the following examples and [godoc](https://godoc.org/github.com/catsworld/qq-bot-api) will give you a tutorial about how to use this package.
+Head through the following examples and [godoc](https://godoc.org/github.com/PhoenixXiang/qq-bot-api) will give you a tutorial about how to use this package.
 If you still have problems, look up to the code or open an issue.
 
 ## Communication Methods
@@ -230,7 +230,7 @@ You can also use bot.SendMessage.
 	image2.DisableCache()
 
 	// Format a local image if CQHTTP and your bot are under the same host
-	// Have a look at https://github.com/catsworld/qq-bot-api/issues/11 if you do want to use this.
+	// Have a look at https://github.com/PhoenixXiang/qq-bot-api/issues/11 if you do want to use this.
 	u, err = url.Parse("file:///tmp/D1D.jpg")
 	image3 := qqbotapi.NewImageWeb(u)
 ```

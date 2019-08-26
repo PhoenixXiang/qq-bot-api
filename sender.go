@@ -1,8 +1,9 @@
 package qqbotapi
 
 import (
-	"github.com/catsworld/qq-bot-api/cqcode"
 	"net/url"
+
+	"github.com/PhoenixXiang/qq-bot-api/cqcode"
 )
 
 type FlatSender struct {
@@ -19,7 +20,7 @@ type Sender struct {
 }
 
 func clone(sender *FlatSender) *FlatSender {
-	newCache := make(cqcode.Message, 0)
+	newCache := make(cqcode.Message, len(sender.cache))
 	copy(newCache, sender.cache)
 	return &FlatSender{
 		bot:      sender.bot,

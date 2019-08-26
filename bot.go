@@ -9,9 +9,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/catsworld/qq-bot-api/cqcode"
-	"github.com/mitchellh/mapstructure"
-	"golang.org/x/net/websocket"
 	"io"
 	"io/ioutil"
 	"log"
@@ -20,6 +17,10 @@ import (
 	"strconv"
 	"sync"
 	"time"
+
+	"github.com/PhoenixXiang/qq-bot-api/cqcode"
+	"github.com/mitchellh/mapstructure"
+	"golang.org/x/net/websocket"
 )
 
 // BotAPI allows you to interact with the Coolq HTTP API.
@@ -595,7 +596,7 @@ func (bot *BotAPI) ListenForWebSocket(config WebhookConfig) UpdatesChannel {
 			}
 			return nil
 		},
-		Handler:   func(ws *websocket.Conn) {
+		Handler: func(ws *websocket.Conn) {
 			connectionClose := make(chan bool)
 
 			go func() {
