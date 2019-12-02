@@ -18,7 +18,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/PhoenixXiang/qq-bot-api/cqcode"
+	"github.com/xiangyt/qq-bot-api/cqcode"
 	"github.com/mitchellh/mapstructure"
 	"golang.org/x/net/websocket"
 )

@@ -3,7 +3,7 @@ package qqbotapi
 import (
 	"net/url"
 
-	"github.com/PhoenixXiang/qq-bot-api/cqcode"
+	"github.com/xiangyt/qq-bot-api/cqcode"
 )
 
 type FlatSender struct {
